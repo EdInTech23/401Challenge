@@ -16,7 +16,7 @@ def tcp_port_scan(target_ip, port_range):
             elif resp.getlayer(TCP).flags == 0x14:
                 print(f"Port {port} is closed.")
 
-# Example usage
-target_ip = "192.168.1.1"  # Replace with the target IP
-port_range = range(20, 1025)  # Define the range of ports to scan
+#  usage
+target_ip = "192.168.1.1"  # ip replaceable 
+port_range = range(20, 1025)  # range of ports 
 tcp_port_scan(target_ip, port_range)
